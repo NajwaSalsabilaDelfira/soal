@@ -1,0 +1,88 @@
+/* Styling untuk halaman Form Data Diri */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: fontcaca;
+    background-color: #fffcfc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(120deg, #cdedff 0%, #fff3b2 100%);
+}
+
+
+.form-container {
+    background-color: #fffcfc;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px #8ed7ff(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    position: relative;
+    animation: slideIn 0.6s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-size: 27px;
+    margin-bottom: 20px;
+    color: #8ed7ff;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #8ed7ff;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #fffcfc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #f6d110;
+}
+
+.submit-btn {
+    background-color: #e6f2f4;
+    color: #0785e6;
+    border: none;
+    padding: 12px 20px;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #fff3b2;
+}
+
+@font-face {
+
+    font-family: fontcaca;
+    src:url('Woodlandia\ Free.ttf')
+}
